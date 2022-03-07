@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+
+}
+
+.card img {
+    margin-bottom: 1.625rem;
+}
+
+h1,
+h2, 
+h3 {
+    font-family: 'Big Shoulders Display', cursive;
+    margin-bottom: 1.563rem;
+    font-size: 2.188rem;
+    color: hsl(0, 0%, 95%);
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color:  hsla(0, 0%, 100%, 0.75);
+    line-height: 1.7;
+    max-width: 13.125rem;
+    font-size: 0.938rem;
+}
+
+.card {
+    padding: 2.5rem 2.813rem;
+}
+
+#card1 {
+    background: hsl(31, 77%, 52%);
+    border-top-left-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
+}
+
+#card1 button {
+    color: hsl(31, 77%, 52%);
+}
+
+#card2 {
+    background-color: hsl(184, 100%, 22%);
+    
+}
+
+#card2 button {
+    color: hsl(184, 100%, 22%);
+}
+
+#card3 {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+}
+
+#card3 button {
+    color: hsl(179, 100%, 13%);
+}
+
+button {
+    display: block;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    padding: 0.813rem 1.875rem;
+    border-radius: 2.5rem;
+    margin-top: 5rem;
+    cursor: pointer;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.875rem;
+    transition: 300ms ease-in-out;
+}
+
+button:hover {
+    background: transparent;
+    outline: 3px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%) !important;
+}
+
+
+@media (max-width: 53.125em) {
+
+    body {
+        margin: 6.25em 1.5625em;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    p {
+        max-width: 100%;
+    }
+
+    #card1 {
+        border-top-right-radius: 0.625em;
+        border-bottom-left-radius: 0;
+    }
+
+    #card3 {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0.625em;
+        border-bottom-left-radius: 0.625em;
+    }
+}
